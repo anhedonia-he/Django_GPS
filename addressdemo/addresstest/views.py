@@ -16,4 +16,3 @@ def test(request):
         address = request.GET
         for address_longitude , address_latitude in address:
             return render(request, 'address.html', {'address_longitude': address_longitude, 'address_latitude': address_latitude})
-            

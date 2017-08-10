@@ -31,7 +31,6 @@
 </html>
 <script type="text/javascript">
     var map = new BMap.Map("allmap");
-    map.centerAndZoom(new BMap.Point(118.3088230000, 32.3002390000), 18);
     map.enableScrollWheelZoom(true);
     var navigationControl = new BMap.NavigationControl({
         // 靠左上角位置
@@ -42,7 +41,10 @@
         enableGeolocation: true
     });
     map.addControl(navigationControl);
-    var point = new BMap.Point(118.3088230000, 32.3002390000);
+    var address_longitude = {{address_longitude}};
+    var address_latitude = {{address_latitude}};
+    var point = new BMap.Point(address_longitude, address_latitude);
+    map.centerAndZoom(new BMap.Point(address_longitude, address_latitude), 18);
     // function get_location() {
     //     var address_latitude ={{ address_latitude |safe}};
     //     var address_longitude ={{ address_longitude|safe }};
