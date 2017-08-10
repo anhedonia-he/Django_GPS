@@ -12,7 +12,12 @@ def test(request):
     # return render(request, 'address.html',
     #               {'address_longitude': json.dumps(address_longitude),
     #                'address_latitude': json.dumps(address_latitude), 'address_data': json.dumps(address_data)})
-    if request.method == 'GET':
-        address = request.GET
-        for address_longitude , address_latitude in address:
-            return render(request, 'address.html', {'address_longitude': address_longitude, 'address_latitude': address_latitude})
+    if request.method == "POST":
+        address = request.POST
+        # for address_longitude , address_latitude in address:
+        #     return render(request, 'address.html', {'address_longitude': address_longitude, 'address_latitude': address_latitude})
+        address_longitude = int(address.get("address_longitude"))
+        address_latitude = int(address.get("address_latitude"))
+        return render(request, 'address.html', {'address_longitude': address_longitude, 'address_latitude': address_latitude})
+    else:
+        return render(request, 'address.html', {'address_longitude': 123, 'address_latitude': 47})
