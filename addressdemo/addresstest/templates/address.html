@@ -30,8 +30,10 @@
 </body>
 </html>
 <script type="text/javascript">
+
     var map = new BMap.Map("allmap");
     map.enableScrollWheelZoom(true);
+    //左上控制台
     var navigationControl = new BMap.NavigationControl({
         // 靠左上角位置
         anchor: BMAP_ANCHOR_TOP_LEFT,
@@ -41,21 +43,26 @@
         enableGeolocation: true
     });
     map.addControl(navigationControl);
+
+    //设立中心点
     var address_longitude = {{address_longitude}};
     var address_latitude = {{address_latitude}};
-    var point = new BMap.Point(address_longitude, address_latitude);
-    map.centerAndZoom(new BMap.Point(address_longitude, address_latitude), 18);
-    // function get_location() {
-    //     var address_latitude ={{ address_latitude |safe}};
-    //     var address_longitude ={{ address_longitude|safe }};
-    //     var address_data ={{ address_data |safe}};
-    //     var point = []; //存放标注点经纬信息的数组
-    //     var marker = []; //存放标注点对象的数组
-    //     for (var i = 0; i < address_longitude.length; i++) {
-    //         point[i] = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
-    //         marker[i] = new BMap.Marker(point[i]); //按照地图点坐标生成标记
-    //         map.addOverlay(marker[i]);
-    //     }
+    var point = [];//存放标注点经纬信息的数组
+    var marker = []; //存放标注点对象的数组
+    map.centerAndZoom(new BMap.Point(123, 47), 18);
+
+    // function addMarker(point){
+	//   var marker = new BMap.Marker(point);
+    //   map.addOverlay(marker);
+    // }
+
+    for (var i = 0; i < address_longitude.length; i++) {
+            point[i] = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
+            marker[i] = new BMap.Marker(point[i]); //按照地图点坐标生成标记
+            map.addOverlay(marker[i]);
+        }
+
+    // map.centerAndZoom(new BMap.Point(address_longitude, address_latitude), 18);
     //     for (i = 0; i < marker.length; i++) {
     //         (function () {
     //             var index = i;
@@ -65,9 +72,4 @@
     //         })();
     //     }
     // }
-    function addMarker(point){
-	  var marker = new BMap.Marker(point);
-      map.addOverlay(marker);
-    }
-    addMarker(point);
 </script>
