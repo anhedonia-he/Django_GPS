@@ -7,6 +7,7 @@
 0001_initial.py	../addressdemo/addresstest/migrations/0001_initial.py	1;"	kind:file	line:1
 0002_delete_address_info.py	../addressdemo/addresstest/migrations/0002_delete_address_info.py	1;"	kind:file	line:1
 0003_address_info.py	../addressdemo/addresstest/migrations/0003_address_info.py	1;"	kind:file	line:1
+0004_remove_address_info_data.py	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	1;"	kind:file	line:1
 ABC	../venv/lib/python3.5/abc.py	/^class ABC(metaclass=ABCMeta):$/;"	kind:class	line:234
 ABCMeta	../venv/lib/python3.5/_collections_abc.py	/^from abc import ABCMeta, abstractmethod$/;"	kind:namespace	line:9
 ABCMeta	../venv/lib/python3.5/abc.py	/^class ABCMeta(type):$/;"	kind:class	line:109
@@ -963,6 +964,7 @@ MethodType	../venv/lib/python3.5/types.py	/^MethodType = type(_C()._m)$/;"	kind:
 Migration	../addressdemo/addresstest/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../addressdemo/addresstest/migrations/0003_address_info.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 ModuleSpec	../venv/lib/python3.5/importlib/_bootstrap.py	/^class ModuleSpec:$/;"	kind:class	line:335
 ModuleSpec	../venv/lib/python3.5/importlib/machinery.py	/^from ._bootstrap import ModuleSpec$/;"	kind:namespace	line:5
 ModuleType	../venv/lib/python3.5/site.py	/^    ModuleType = type(os)$/;"	kind:variable	line:90
@@ -2288,7 +2290,7 @@ __slots__	../venv/lib/python3.5/weakref.py	/^        __slots__ = ("weakref", "fu
 __slots__	../venv/lib/python3.5/weakref.py	/^    __slots__ = "_func_ref", "_meth_type", "_alive", "__weakref__"$/;"	kind:variable	line:41
 __slots__	../venv/lib/python3.5/weakref.py	/^    __slots__ = "key",$/;"	kind:variable	line:303
 __slots__	../venv/lib/python3.5/weakref.py	/^    __slots__ = ()$/;"	kind:variable	line:487
-__str__	../addressdemo/addresstest/models.py	/^    def __str__(self):$/;"	kind:member	line:9
+__str__	../addressdemo/addresstest/models.py	/^    def __str__(self):$/;"	kind:member	line:8
 __str__	../venv/lib/python3.5/collections/__init__.py	/^    def __str__(self): return str(self.data)$/;"	kind:member	line:1104
 __str__	../venv/lib/python3.5/collections/__main__.py	/^    def __str__(self):$/;"	kind:member	line:18
 __str__	../venv/lib/python3.5/sre_constants.py	/^    def __str__(self):$/;"	kind:member	line:49
@@ -2902,6 +2904,7 @@ backslashreplace_errors	../venv/lib/python3.5/codecs.py	/^    backslashreplace_e
 backslashreplace_errors	../venv/lib/python3.5/codecs.py	/^    backslashreplace_errors = lookup_error("backslashreplace")$/;"	kind:variable	line:1086
 barry_as_FLUFL	../venv/lib/python3.5/__future__.py	/^barry_as_FLUFL = _Feature((3, 1, 0, "alpha", 2),$/;"	kind:variable	line:134
 base	../venv/bin/activate_this.py	/^base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:18
+base64	../addressdemo/addresstest/views.py	/^import base64$/;"	kind:namespace	line:4
 base64	../venv/lib/python3.5/encodings/base64_codec.py	/^import base64$/;"	kind:namespace	line:9
 base64.py	../venv/lib/python3.5/base64.py	1;"	kind:file	line:1
 base64_codec.py	../venv/lib/python3.5/encodings/base64_codec.py	1;"	kind:file	line:1
@@ -3382,7 +3385,6 @@ curdir	../venv/lib/python3.5/ntpath.py	/^curdir = '.'$/;"	kind:variable	line:24
 curdir	../venv/lib/python3.5/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:113
 curdir	../venv/lib/python3.5/posixpath.py	/^curdir = '.'$/;"	kind:variable	line:30
 currency	../venv/lib/python3.5/locale.py	/^def currency(val, symbol=True, grouping=False, international=False):$/;"	kind:function	line:254
-data	../addressdemo/addresstest/models.py	/^    data = models.CharField(max_length=200)$/;"	kind:variable	line:7
 data_encoding	../venv/lib/python3.5/codecs.py	/^    data_encoding = 'unknown'$/;"	kind:variable	line:769
 debug	../venv/lib/python3.5/tarfile.py	/^    debug = 0                   # May be set from 0 (no msgs) to 3 (all msgs)$/;"	kind:variable	line:1379
 decode	../venv/lib/python3.5/base64.py	/^def decode(input, output):$/;"	kind:function	line:507
@@ -3725,6 +3727,7 @@ delocalize	../venv/lib/python3.5/locale.py	/^def delocalize(string):$/;"	kind:fu
 dependencies	../addressdemo/addresstest/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
 dependencies	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../addressdemo/addresstest/migrations/0003_address_info.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^    dependencies = [$/;"	kind:variable	line:10
 deque	../venv/lib/python3.5/collections/__init__.py	/^    from _collections import deque$/;"	kind:namespace	line:35
 dereference	../venv/lib/python3.5/tarfile.py	/^    dereference = False         # If true, add content of linked file to the$/;"	kind:variable	line:1381
 detach	../venv/lib/python3.5/weakref.py	/^    def detach(self):$/;"	kind:member	line:521
@@ -4788,11 +4791,13 @@ methodcaller	../venv/lib/python3.5/operator.py	/^class methodcaller:$/;"	kind:cl
 migrations	../addressdemo/addresstest/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 migrations	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^from django.db import migrations$/;"	kind:namespace	line:5
 migrations	../addressdemo/addresstest/migrations/0003_address_info.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^from django.db import migrations$/;"	kind:namespace	line:5
 mkdtemp	../venv/lib/python3.5/tempfile.py	/^def mkdtemp(suffix=None, prefix=None, dir=None):$/;"	kind:function	line:345
 mkstemp	../venv/lib/python3.5/tempfile.py	/^def mkstemp(suffix=None, prefix=None, dir=None, text=False):$/;"	kind:function	line:305
 mktemp	../venv/lib/python3.5/tempfile.py	/^def mktemp(suffix="", prefix=template, dir=None):$/;"	kind:function	line:384
 mod	../venv/lib/python3.5/operator.py	/^def mod(a, b):$/;"	kind:function	line:100
 mode	../venv/lib/python3.5/tempfile.py	/^    def mode(self):$/;"	kind:member	line:715
+model_name	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^            model_name='address_info',$/;"	kind:variable	line:16
 models	../addressdemo/addresstest/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../addressdemo/addresstest/migrations/0003_address_info.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../addressdemo/addresstest/models.py	/^from django.db import models$/;"	kind:namespace	line:1
@@ -4817,6 +4822,7 @@ name	../addressdemo/addresstest/apps.py	/^    name = 'addresstest'$/;"	kind:vari
 name	../addressdemo/addresstest/migrations/0001_initial.py	/^            name='address_info',$/;"	kind:variable	line:17
 name	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^            name='address_info',$/;"	kind:variable	line:16
 name	../addressdemo/addresstest/migrations/0003_address_info.py	/^            name='address_info',$/;"	kind:variable	line:18
+name	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^            name='data',$/;"	kind:variable	line:17
 name	../venv/lib/python3.5/hmac.py	/^    def name(self):$/;"	kind:member	line:87
 name	../venv/lib/python3.5/os.py	/^    name = 'ce'$/;"	kind:variable	line:89
 name	../venv/lib/python3.5/os.py	/^    name = 'nt'$/;"	kind:variable	line:69
@@ -4887,6 +4893,7 @@ opengroup	../venv/lib/python3.5/sre_parse.py	/^    def opengroup(self, name=None
 operations	../addressdemo/addresstest/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
 operations	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../addressdemo/addresstest/migrations/0003_address_info.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^    operations = [$/;"	kind:variable	line:14
 operator.py	../venv/lib/python3.5/operator.py	1;"	kind:file	line:1
 opt_flags	../venv/bin/python-config	/^opt_flags = [flag for (flag, val) in opts]$/;"	kind:variable	line:33
 opt_flags	../venv/lib/python3.5/config-3.5m/python-config.py	/^opt_flags = [flag for (flag, val) in opts]$/;"	kind:variable	line:30
@@ -5003,6 +5010,7 @@ randrange	../venv/lib/python3.5/random.py	/^    def randrange(self, start, stop=
 randrange	../venv/lib/python3.5/random.py	/^randrange = _inst.randrange$/;"	kind:variable	line:725
 range_iterator	../venv/lib/python3.5/_collections_abc.py	/^range_iterator = type(iter(range(0)))$/;"	kind:variable	line:43
 raw_unicode_escape.py	../venv/lib/python3.5/encodings/raw_unicode_escape.py	1;"	kind:file	line:1
+re	../addressdemo/addresstest/views.py	/^import re$/;"	kind:namespace	line:5
 re	../venv/lib/python3.5/base64.py	/^import re$/;"	kind:namespace	line:9
 re	../venv/lib/python3.5/encodings/idna.py	/^import stringprep, re, codecs$/;"	kind:namespace	line:3
 re	../venv/lib/python3.5/fnmatch.py	/^import re$/;"	kind:namespace	line:14
@@ -5355,7 +5363,7 @@ tempdir	../venv/lib/python3.5/tempfile.py	/^tempdir = None$/;"	kind:variable	lin
 tempfile.py	../venv/lib/python3.5/tempfile.py	1;"	kind:file	line:1
 template	../venv/lib/python3.5/re.py	/^def template(pattern, flags=0):$/;"	kind:function	line:231
 template	../venv/lib/python3.5/tempfile.py	/^template = "tmp"$/;"	kind:variable	line:71
-test	../addressdemo/addresstest/views.py	/^def test(request):$/;"	kind:function	line:5
+test	../addressdemo/addresstest/views.py	/^def test(request):$/;"	kind:function	line:7
 test	../venv/lib/python3.5/base64.py	/^def test():$/;"	kind:function	line:590
 tests.py	../addressdemo/addresstest/tests.py	1;"	kind:file	line:1
 textwrap	../venv/lib/python3.5/site.py	/^        import textwrap$/;"	kind:namespace	line:753
@@ -5413,6 +5421,7 @@ unicode_internal.py	../venv/lib/python3.5/encodings/unicode_internal.py	1;"	kind
 unicode_literals	../addressdemo/addresstest/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../addressdemo/addresstest/migrations/0002_delete_address_info.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../addressdemo/addresstest/migrations/0003_address_info.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../addressdemo/addresstest/migrations/0004_remove_address_info_data.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../venv/lib/python3.5/__future__.py	/^unicode_literals = _Feature((2, 6, 0, "alpha", 2),$/;"	kind:variable	line:130
 unicodedata	../venv/lib/python3.5/encodings/idna.py	/^from unicodedata import ucd_3_2_0 as unicodedata$/;"	kind:namespace	line:4
 uniform	../venv/lib/python3.5/random.py	/^    def uniform(self, a, b):$/;"	kind:member	line:342

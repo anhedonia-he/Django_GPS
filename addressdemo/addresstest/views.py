@@ -1,6 +1,8 @@
 from django.shortcuts import render
 import json
 from addresstest.models import address_info
+import base64
+import re
 
 def test(request):
     # for i in range(len(address_point)):
@@ -12,9 +14,14 @@ def test(request):
     #                'address_latitude': json.dumps(address_latitude), 'address_data': json.dumps(address_data)})
     if request.method == "POST":
         address = request.POST
+        lat_long = base64.b64decode(address.get("payload")).decode()
+        lat_long = re.split(r',', lat_long)
+        address_latitude = float(lat_long[0])
+        address_longitude = float(lat_long[1])
+        print(address_latitude, address_longitude)
         #向数据库添加 POST 来的点
-        address_longitude = int(address.get("address_longitude"))
-        address_latitude = int(address.get("address_latitude"))
+        # address_longitude = int(address.get("address_longitude"))
+        # address_latitude = int(address.get("address_latitude"))
         address_info.objects.create(longitude = address_longitude, latitude = address_latitude)
         #向模板传递数据点列表
         address_point = address_info.objects.all()
